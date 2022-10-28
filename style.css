@@ -1,0 +1,654 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 90px;
+}
+body {
+  font-family: poppins;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/img5.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(0,0,0,.5);
+  background-blend-mode: multiply;
+}
+.headerTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins;
+  font-weight: bold;
+  color: #fff;
+  padding: 18%;
+  height: 100vh;
+}
+
+.Btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  top: 70%;
+}
+.nav {
+  /* flex-direction: column;*/
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+  padding: 2px 10px;
+  z-index: 1999;
+}
+.nav.active {
+  background: #fff;
+}
+.nav.active .logo,
+.nav.active a {
+  color: #000;
+}
+.nav.active a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.logo {
+  margin: 0;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  padding: 25px 30px;
+}
+.open-menu {
+  display: none;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  list-style: none;
+  margin-left: 10px;
+}
+.menu li a {
+  color: #ffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.menu li a:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 15px;
+  box-shadow: rgb(92 104 221) 0px 7px 29px 0px;
+}
+.scroll {
+  height: 100px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 5%;
+}
+/* From uiverse.io by @barisdogansutcu */
+.button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  letter-spacing: 3px;
+  background-color: rgb(92, 104, 221);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(92 104 221) 0px 7px 29px 0px;
+}
+
+.button:active {
+  letter-spacing: 3px;
+  background-color: rgb(40, 174, 214);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(24, 60, 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+#footer {
+  background-color: rgb(0, 0, 0);
+}
+#footer p {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+/*Seccion #1 Sobre la empresa*/
+.primera {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#xd {
+  width: 80%;
+  height: 100%;
+  border-radius: 5%;
+  padding: 60px;
+  margin-left: 7%;
+  margin-top: 3%;
+  float: absolute;
+}
+.primera p {
+  color: rgb(10, 10, 10);
+  text-align: center;
+  padding: 10px;
+  font-size: 17px;
+}
+.primera h1 {
+  color: rgb(14, 13, 13);
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+.parr {
+  float: absolute;
+  margin-top: 20%;
+}
+.segunda {
+  background-color: #272727;
+}
+.segunda H1 {
+  padding: 2%;
+  line-height: 40%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+}
+/* From uiverse.io by @alexruix */
+.card {
+  width: 250px;
+  /* height: 300px; */
+  padding: 0.9em;
+  background: #f5f5f5;
+  border-radius: 10px;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: 100ms;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-img {
+  background-color: #d4a6ff;
+  height: 50%;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.card-info {
+  padding-top: 2%;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2px;
+  border-top: 1px solid #ddd;
+}
+
+/*Text*/
+.text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.text-body {
+  font-size: 0.9em;
+  padding-bottom: 10px;
+}
+
+/*Button*/
+.card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+/*Hover*/
+.card-img:hover {
+  transform: translateY(-25%);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px,
+    rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+  border: 1px solid #d4a6ff;
+  background-color: #d4a6ff;
+}
+.CardServi {
+  background-color: #272727;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  padding: 8%;
+}
+
+.cardstercera {
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8%;
+  scroll-padding: 90px;
+  justify-items: center;
+}
+/* From uiverse.io by @Tiagoadag */
+.card1 {
+  width: 450px;
+  height: 254px;
+  background-image: linear-gradient(163deg, #00ccff 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.card2 {
+  width: 450px;
+  height: 254px;
+  background-color: #272727;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.card2 img{
+  background-image: linear-gradient(163deg, #00ccff 0%, #3700ff 100%);
+  padding: 7px;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card1:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
+#tercera h1{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: italic;
+  padding: 20px;
+  font-size: 25px;
+}
+
+#cuarta {
+  background-color: #272727;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mapa {
+  border-radius: 10%;
+  padding: 20px;
+}
+.textocontacto {
+  background-color: #272727;
+  margin-top: 20%;
+  font-size: 15px;
+  font-style: italic;
+  color: #ffff;
+}
+#XDD {
+  color: white;
+  text-align: center;
+  padding: 60px;
+  margin-top: -7%;
+  font-size: 30px;
+}
+.imgxd {
+  width: 40%;
+  height: 70%;
+  border-radius: 50%;
+  padding: 15px;
+  margin-left: 32%;
+}
+.textcard2 {
+  text-align: center;
+  color: #fff;
+}
+.textocontacto {
+  margin-top: 0;
+  text-align: center;
+  padding: 35px;
+  font-size: 10px;
+}
+#icons{
+  padding: 8%;
+}
+#icons ul {
+display: flex;
+justify-content: center;
+gap: 18px;
+list-style: none;
+
+}
+#icons img{
+width: 40px;
+height: 40px;
+margin: 10px;
+left: 10px;
+}
+
+
+/* breakpoint table */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+
+  .headerTitle {
+    padding: 18% 10%;
+}
+
+.headerTitle h1 {
+  font-size: 27px;
+}
+
+.button {
+  padding: 8.5px 20px;
+  font-size: 14px;
+}
+
+.open-menu {
+  display: unset;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+  position: fixed;
+  top: 37.5px;
+  right: 20px;
+  z-index: 101;
+}
+.menu {
+    padding-top: 80px;
+  transition: transform ease-in-out 0.3s;
+  transform: translateX(100%);
+  background-color: #000;
+  flex-direction: column;
+  gap: 14px 0;
+  position: fixed;
+  right: 0;
+  left: 80px;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+}
+.menu.active {
+  transform: translateX(0);
+}
+
+.nav.active a {
+    color: #fff;
+}
+#xd {
+  display: block;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  padding: 30px;
+  margin-top: 10%;
+}
+/*xd*/
+.segunda {
+  padding: 8%;
+}
+.segunda h1 {
+  font-size: 25px;
+}
+.CardServi {
+  max-width: 100%;
+  overflow-x: scroll;
+  align-items: stretch;
+  scroll-snap-type: x mandatory;
+  margin: auto;
+  padding: 8% 0;
+  gap:20px;
+}
+
+.card {
+  flex-shrink: 0;
+  width: 100%;
+  height: unset;
+  scroll-snap-align: start;
+}
+ /*xddd*/
+.cardstercera {
+  grid-template-columns: 1fr;
+  gap: 8px 0;
+}
+
+
+.card2 img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  margin-left: 40%;
+  background-image: linear-gradient(163deg, #00ccff 0%, #3700ff 100%);
+  padding: 7px;
+  
+}
+
+#cuarta {
+  grid-template-columns: 1fr;
+}
+
+.textocontacto {
+  margin-top: 0;
+  text-align: center;
+  padding: 35px;
+  font-size: 10px;
+}
+#XDD{
+padding: 10px;
+}
+ 
+#icons{
+  padding: 8%;
+}
+#icons ul {
+display: flex;
+justify-content: center;
+gap: 18px;
+list-style: none;
+
+}
+#icons img{
+width: 40px;
+height: 40px;
+margin: 10px;
+left: 10px;
+}
+
+}
+
+/* breakpoint mobile */ 
+/* min-width: 768px -> inf
+min-width: 1199.9px -> inf */
+@media (max-width: 767px) {
+    .headerTitle {
+        padding: 18% 10%;
+    }
+    
+    .headerTitle h1 {
+      font-size: 27px;
+    }
+  
+    .button {
+      padding: 8.5px 20px;
+      font-size: 14px;
+    }
+  
+    .open-menu {
+      display: unset;
+      background-color: transparent;
+      border: none;
+      outline: transparent;
+      position: fixed;
+      top: 37.5px;
+      right: 20px;
+      z-index: 101;
+    }
+    .menu {
+        padding-top: 80px;
+      transition: transform ease-in-out 0.3s;
+      transform: translateX(100%);
+      background-color: #000;
+      flex-direction: column;
+      gap: 14px 0;
+      position: fixed;
+      right: 0;
+      left: 80px;
+      top: 0;
+      bottom: 0;
+      z-index: 100;
+    }
+    .menu.active {
+      transform: translateX(0);
+    }
+
+    .nav.active a {
+        color: #fff;
+    }
+
+    .primera {
+        grid-template-columns: 1fr;
+        
+    }
+    .primera p {
+        font-size: 18px;
+        padding: 20px;
+    }
+    
+
+    #xd {
+        display: flex;
+        width: 60%;
+        padding: 30px; 
+        margin: auto;
+  
+    }
+    .imgp{
+      margin-top: 80px;
+    }
+
+    .segunda {
+        padding: 8%;
+    }
+    .segunda h1 {
+        font-size: 25px;
+    }
+    .CardServi {
+        display: flex;
+        max-width: 70%;
+        overflow-x: scroll;
+        
+        align-items: stretch;
+        scroll-snap-type: x mandatory;
+        padding: 0;
+        margin: auto;
+        padding: 8% 0;
+    }
+    
+    .card {
+        flex-shrink: 0;
+        width: 100%;
+        height: unset;
+        scroll-snap-align: start;
+    }
+
+    .cardstercera {
+        grid-template-columns: 1fr;
+        gap: 8px 0;
+    }
+
+    .card1, .card2 {
+        width: 100%;
+    }
+
+    .card2 img {
+        width: 128px;
+        height: 128px;
+        margin-left: 34%;
+        object-fit: cover;
+        background-image: linear-gradient(163deg, #00ccff 0%, #3700ff 100%);
+    }
+
+    #cuarta {
+        grid-template-columns: 1fr;
+    }
+    
+    .mapa iframe {
+        width: 100%;
+        height: 300px;
+    }
+    .textocontacto {
+        margin-top: 0;
+        text-align: center;
+        padding: 20px;
+        font-size: 13px;
+    }
+    #XDD{
+      padding: 8px;
+    }
+    #icons{
+        padding: 8%;
+    }
+  #icons ul {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    list-style: none;
+    
+  }
+  #icons img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    left: 10px;
+  }
+  .textcard2{
+    font-size: 14px;
+    font-display: swap;
+    font-variant: unset;
+  }
+  }
